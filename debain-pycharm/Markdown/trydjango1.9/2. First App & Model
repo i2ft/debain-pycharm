@@ -22,3 +22,10 @@
             return self.title
         
 >crate model
+
+``python manage.py makemigrations``
+>테이블 파일만들기
+
+``python manage.py migrate``
+>만들 테이블파일 db에 대입
+
