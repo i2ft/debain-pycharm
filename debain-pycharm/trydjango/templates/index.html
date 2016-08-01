@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="kr">
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
@@ -8,8 +8,8 @@
 <h1>{{title}}template is working</h1>
 
 {% for obj in object_list %}
-
-{{ obj.title }}
+{% url "posts:detail" id=obj.id %}
+<a href={{ obj.get_absolute_url }}> {{ obj.title }}</a><br>
 {{ obj.content }}
 {{ obj.titmestamp }}
 {{ obj.updated }}
