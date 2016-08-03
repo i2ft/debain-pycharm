@@ -28,7 +28,7 @@
         <entry file="file://$PROJECT_DIR$/../Markdown/trydjango1.9/17.asd.md">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <caret line="0" column="9" selection-start-line="0" selection-start-column="9" selection-end-line="0" selection-end-column="9" />
               <folding />
             </state>
           </provider>
@@ -74,6 +74,7 @@
         <option value="$PROJECT_DIR$/templates/post_detail.html" />
         <option value="$PROJECT_DIR$/posts/views.py" />
         <option value="$PROJECT_DIR$/../Markdown/trydjango1.9/16.Django Messages Framework.md" />
+        <option value="$PROJECT_DIR$/../Markdown/trydjango1.9/17.asd.md" />
       </list>
     </option>
   </component>
@@ -838,7 +839,7 @@
     <entry file="file://$PROJECT_DIR$/../Markdown/trydjango1.9/17.asd.md">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <caret line="0" column="9" selection-start-line="0" selection-start-column="9" selection-end-line="0" selection-end-column="9" />
           <folding />
         </state>
       </provider>
