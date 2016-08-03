@@ -15,11 +15,11 @@ Including another URLconf
 """
 from django.conf.urls import url
 from .views import (
-posts_detail,
-posts_list,
-posts_create,
-posts_delete,
-posts_update
+post_detail,
+post_list,
+post_create,
+post_delete,
+post_update
 )
 
 
@@ -27,9 +27,9 @@ posts_update
 
 urlpatterns = [
 
-    url(r'^$', posts_list),
-    url(r'^create/$', posts_create),
-    url(r'^(?P<id>\d+)/$', posts_detail,name="detail"),
-    url(r'^(?P<id>\d+)/edit/$', posts_update,name="update"),
-    url(r'^delete/$', posts_delete)
+    url(r'^$', post_list, name='list'),
+    url(r'^create/$', post_create),
+    url(r'^(?P<id>\d+)/$', post_detail,name="detail"),
+    url(r'^(?P<id>\d+)/edit/$', post_update,name="update"),
+    url(r'^(?P<id>\d+)/delete/$', post_delete),
 ]
