@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d860602b-376d-401c-b432-e9dc00a6bde6" name="Default" comment="" />
+    <list default="true" id="d860602b-376d-401c-b432-e9dc00a6bde6" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Markdown/trydjango1.9/17.asd.md" afterPath="$PROJECT_DIR$/../Markdown/trydjango1.9/17.asd.md" />
+    </list>
     <ignored path="trydjango.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path=".idea/dataSources.local.xml" />
@@ -28,7 +30,7 @@
         <entry file="file://$PROJECT_DIR$/../Markdown/trydjango1.9/17.asd.md">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
-              <caret line="0" column="9" selection-start-line="0" selection-start-column="9" selection-end-line="0" selection-end-column="9" />
+              <caret line="0" column="8" selection-start-line="0" selection-start-column="8" selection-end-line="0" selection-end-column="8" />
               <folding />
             </state>
           </provider>
@@ -839,7 +841,7 @@
     <entry file="file://$PROJECT_DIR$/../Markdown/trydjango1.9/17.asd.md">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="0" column="9" selection-start-line="0" selection-start-column="9" selection-end-line="0" selection-end-column="9" />
+          <caret line="0" column="8" selection-start-line="0" selection-start-column="8" selection-end-line="0" selection-end-column="8" />
           <folding />
         </state>
       </provider>
