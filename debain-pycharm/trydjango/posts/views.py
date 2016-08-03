@@ -3,12 +3,12 @@ from django.http import HttpResponse,HttpResponseRedirect
 from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
 from django.contrib import messages
 
-from .forms import Postfrom
+from .forms import PostForm
 
 from .models import Post
 
 def post_create(request):
-    form = Postfrom(request.POST or None)
+    form = PostForm(request.POST or None, request.FILES or None)
     if form.is_valid():
         instance = form.save(commit=False)
 
@@ -56,7 +56,7 @@ def post_list(request):
 
 def post_update(request,id=None):
     instance = get_object_or_404(Post, id=id)
-    form = Postfrom(request.POST or None,instance=instance)
+    form = PostForm(request.POST or None, request.FILES or None, instance=instance)
 
     if form.is_valid():
         instance=form.save(commit=False)
