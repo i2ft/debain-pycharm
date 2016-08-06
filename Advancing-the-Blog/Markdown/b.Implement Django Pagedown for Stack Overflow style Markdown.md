@@ -38,4 +38,4 @@ class PostForm-> add code
     
 **post_list.html**
 
-~~
+하하추가용
