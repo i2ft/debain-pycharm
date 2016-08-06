@@ -4,10 +4,13 @@ from django.conf import settings
 from django.core.urlresolvers import reverse
 from django.db import models
 from django.db.models.signals import pre_save
-
+from django.utils.safestring import mark_safe
+from markdown_deux import markdown
 from django.utils.text import slugify
 # Create your models here.
 # MVC MODEL VIEW CONTROLLER
+
+
 
 
 def upload_location(instance, filename):
@@ -41,6 +44,11 @@ class Post(models.Model):
 
     class Meta:
         ordering = ["-timestamp", "-updated"]
+
+    def get_markdown(self):
+        content = self.content
+        markdown_text = markdown(content)
+        return mark_safe(markdown_text)
 
 
 

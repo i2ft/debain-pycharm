@@ -38,4 +38,7 @@ class PostForm-> add code
     
 **post_list.html**
 
-하하추가용
+``<p>{{ obj.content|linebreaks|truncatechars:120 }}</p>``
+->
+
+    <p class='content-markdown'>{{ obj.content|truncatechars:120 }}</p>
