@@ -4,6 +4,7 @@ from django.http import HttpResponse, HttpResponseRedirect, Http404
 from django.shortcuts import render, get_object_or_404, redirect
 from urllib import quote_plus
 from django.db.models import Q
+from django.utils.encoding import smart_text
 
 from .forms import PostForm
 from .models import Post
@@ -26,7 +27,10 @@ def post_create(request):
 
 def post_detail(request, slug=None):
 	instance = get_object_or_404(Post, slug=slug)
-	share_string = quote_plus(instance.content)
+	print(instance.content)
+	share_string = quote_plus(instance.content.encode(encoding='utf-8'))
+
+
 	context = {
 		"title": instance.title,
 		"instance": instance,
@@ -95,3 +99,4 @@ def post_delete(request, slug=None):
 	instance.delete()
 	messages.success(request, "Successfully deleted")
 	return redirect("posts:list")
+

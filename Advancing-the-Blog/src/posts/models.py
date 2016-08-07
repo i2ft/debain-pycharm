@@ -7,6 +7,9 @@ from django.db.models.signals import pre_save
 from django.utils.safestring import mark_safe
 from markdown_deux import markdown
 from django.utils.text import slugify
+
+from unidecode import unidecode
+from django.template import defaultfilters
 # Create your models here.
 # MVC MODEL VIEW CONTROLLER
 
@@ -53,7 +56,7 @@ class Post(models.Model):
 
 
 def create_slug(instance, new_slug=None):
-    slug = slugify(instance.title)
+    slug = defaultfilters.slugify(unidecode(instance.title))
     if new_slug is not None:
         slug = new_slug
     qs = Post.objects.filter(slug=slug).order_by("-id")
